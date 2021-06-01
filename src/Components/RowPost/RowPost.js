@@ -43,16 +43,6 @@ function RowPost(props) {
             })
             .catch(err => console.log(err))
         }
-        // console.log(id);
-        // axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`)
-        // .then((response)=>{
-        //         console.log(response.data.results[0]);
-        //     if(response.data.results.length!==0){
-        //         setTrailerUrl(response.data.results[0])
-        //     }else{
-        //         console.log('Trailer Not Available');
-        //     }
-        // })
     } 
 
     let poster
