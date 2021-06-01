@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Banner.css"
 import axios from '../../axios'
-import {API_KEY, imageURL} from '../../Constants/Constants'
+import { API_KEY, imageURL } from '../../Constants/Constants'
 import { originals } from '../../URLs';
 
 function Banner() {
@@ -10,19 +10,19 @@ function Banner() {
 
     useEffect(() => {
         axios.get(originals)
-        .then((response)=>{
-            console.log(response.data);
-            const movie_num = Math.floor(Math.random() *  response.data.results.length);
-            setMovie(response.data.results[movie_num]);
-        })
+            .then((response) => {
+                console.log(response.data);
+                const movie_num = Math.floor(Math.random() * response.data.results.length);
+                setMovie(response.data.results[movie_num]);
+            })
     }, [])
 
-    function truncate(str, n){
+    function truncate(str, n) {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
     }
 
     return (
-        <div className="banner" style={{backgroundImage: `url(${movie ? imageURL+movie.backdrop_path : ""})`}}>
+        <div className="banner" style={{ backgroundImage: `url(${movie ? imageURL + movie.backdrop_path : ""})` }}>
             <div className="content">
                 <h1 className="banner__title">{movie?.name}</h1>
                 <div className="banner__buttons">

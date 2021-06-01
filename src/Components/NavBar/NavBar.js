@@ -6,10 +6,10 @@ function NavBar() {
     const [show, handleShow] = useState(false);
     const [toggle, setToggle] = useState(false);
 
-    const checkToggle = () =>{
-        if(toggle){
+    const checkToggle = () => {
+        if (toggle) {
             setToggle(false);
-        }else{
+        } else {
             setToggle(true)
         }
     }
@@ -34,12 +34,12 @@ function NavBar() {
                 <nav className="browse_nav" onClick={checkToggle}>
                     <ul>
                         <li className="browse"><a>Browse</a></li>
-                        <li className="browse">{ toggle ? <i class="fas fa-sort-up"></i> : <i class="fas fa-caret-down"></i>}</li>
+                        <li className="browse">{toggle ? <i class="fas fa-sort-up"></i> : <i class="fas fa-caret-down"></i>}</li>
                     </ul>
                 </nav>
 
                 <div className="right__nav">
-                    <nav className={ toggle ? "nav_active" : "nav_notactive"}>
+                    <nav className={toggle ? "nav_active" : "nav_notactive"}>
                         <ul>
                             <li className="active hide__right_navlinks"><a href="">Home</a></li>
                             <li className="hide__right_navlinks"><a href="">TV Shows</a></li>
