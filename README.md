@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Netflix-Clone
+
+App Link : [https://netflix-clone-b3d65.web.app/](https://netflix-clone-b3d65.web.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
