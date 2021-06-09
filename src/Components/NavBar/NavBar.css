@@ -126,14 +126,14 @@ nav.browse_nav ul a{
 
 @media (max-width: 1090px) {
     .navbar__logo {
-        left: 10px;
+        left: 0px;
     }
 
     .hide__left_navlinks {
         display: none;
     }
     .browse_nav {
-        padding-left: 130px;
+        padding-left: 115px;
     }
     .browse {
         cursor: pointer;
