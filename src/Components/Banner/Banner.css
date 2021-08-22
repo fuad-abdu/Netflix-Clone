@@ -57,7 +57,15 @@
 }
 
 @media (max-width: 490px) {
- .banner{
-    margin-right: -20px;
- }   
+    html{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .banner{
+        margin-right: -20px;
+    }   
+
+    .banner__description{
+        height: 90px;
+    }
 }
